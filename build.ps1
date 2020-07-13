@@ -1,12 +1,12 @@
 #!/usr/bin/env pwsh
-$version = "1.0.1"
+$version = "1.0.0"
 $build_configuration = "RELEASE"
 
 # Assigning Global Variables
-$sonarqubeUrl = "https://sonarqube.ants.zone"
-#$sonarqubeUrl = $null
+$sonarqubeUrl = $null
+#$sonarqubeUrl = ""
 $sonarqubeToken = ""
-$sonarqubeProjectKey = "spike2"
+$sonarqubeProjectKey = "spike"
 
 Push-Location ./src
    if ($null -ne $sonarqubeUrl) {
